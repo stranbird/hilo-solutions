@@ -61,8 +61,8 @@ class Test(unittest.TestCase):
     def test_2(self):
         s = '<yellow>aaa<blue>bbb</blue>ccc</yellow>'
         self.assertEqual([0, 6, 3], count_colors(s))
-        for cnt in count_colors(s):
-            print cnt,
 
 if __name__ == '__main__':
     text = raw_input()
+    for cnt in count_colors(text):
+        print cnt,
